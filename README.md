@@ -75,7 +75,7 @@
 
 [Homework][Final-Project]:
 
-[Introduction-to-JavaScript]: https://example.com
+[Introduction-to-JavaScript]: https://github.com/Sabotazh/JS-Fundamentals-June/tree/main/01/index.html
 [Operators.-Type-conversions.-Arrays.-Conditional-statement]: https://example.com
 [Loops.-Functions]: https://example.com
 [Debugging.-Handling-exceptions]: https://example.com
