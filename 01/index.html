@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="wrapper">
+    <h2>1. Introduction to JavaScript <img src="icon.png" alt="icon"></h2>
+      <ul id="list-container">
+        <li>
+          <div class="row">
+            <label for="task-one"></label>
+            <input disabled type="text" id="task-one" placeholder="1. Напишіть скріпт всередині HTML-документу, який виводить на екран ваше імя за допомогою функції alert().">
+            <button onclick="alert('Ivan')">Check</button>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <label for="task-two"></label>
+            <input disabled type="text" id="task-two" placeholder="2. Напишіть скріпт в зовнішньому файлі, який виводить в консоль ваше прізвище. Підключіть створений файл до HTML-документу.">
+            <button onclick="getSurname()">Check</button>
+          </div>
+        </li>
+        <li class="list">
+          <ul>
+            <li>
+                <label for="task-three"></label>
+                <input disabled type="text" id="task-three" placeholder="3.">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="row-list">
+                <label for="task-three-a"></label>
+                <input disabled type="text" id="task-three-a" placeholder="a) оголосіть дві змінні;">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-three-b"></label>
+                <input disabled type="text" id="task-three-b" placeholder="b) запишіть у змінні будь-які значення;">
+                <button onclick="getTwoVariablesValues()">Check</button>
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-three-c"></label>
+                <input disabled type="text" id="task-three-c" placeholder="c) виведіть на екран значення змінних;">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-three-d"></label>
+                <input disabled type="text" id="task-three-d" placeholder="d) скопіюйте значення однієї змінної в іншу;">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-three-e"></label>
+                <input disabled type="text" id="task-three-e" placeholder="e) виведіть на екран значення змінних.">
+              </div>
+            </li>
+          </ul>
+          <br>
+        </li>
+        <li>
+          <div class="row">
+            <label for="task-four"></label>
+            <input disabled type="text" id="task-four" placeholder="4. Створіть об’єкт з 5-ма наступними властивостями: “String”, “Number”, “Boolean”, “Undefined”, “Null”. Значення кожної властивості повинно відповідати відповідному примітивному типу даних.">
+            <button onclick="getObject()">Check</button>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <label for="task-five"></label>
+            <input disabled type="text" id="task-five" placeholder="5. Використовуючи функцію confirm() задайте користувачу питання про досягнення ним повнолітнього віку. Результат запишіть в змінну isAdult і виведіть в консоль.">
+            <button onclick="isAdult()">Check</button>
+          </div>
+        </li>
+        <li class="list">
+          <ul>
+            <li>
+              <div class="row-left">
+              <label for="task-six"></label>
+              <input disabled type="text" id="task-six" placeholder="6. В зовнішньому файлі напишіть скріпт, в якому оголосіть змінні, для збереження таких даних:">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="row-list">
+                <label for="task-six-a"></label>
+                <input disabled type="text" id="task-six-a" placeholder="&#9900; ваше ім’я;">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-six-b"></label>
+                <input disabled type="text" id="task-six-b" placeholder="&#9900; ваше прізвище;">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-six-c"></label>
+                <input disabled type="text" id="task-six-c" placeholder="&#9900; навчальна група;">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-six-d"></label>
+                <input disabled type="text" id="task-six-d" placeholder="&#9900; ваш рік народження.">
+              </div>
+            </li>
+            <li>
+              <div class="row-list">
+                <label for="task-six-button"></label>
+                <input disabled type="text" id="task-six-button">
+                <button onclick="getCurrentStudent()">Check</button>
+              </div>
+            </li>
+          </ul>
+          <p class="row-list">
+            Присвойте змінним відповідні значення.<br><br>
+            Створіть та проініціалізуйте логічну змінну для збереження вашого сімейного стану.<br><br>
+            Визначте тип кожної змінної.<br><br>
+            Виведіть значення змінних в консоль, відповідно до їх типу, в такому порядку: Number, Boolean, String.<br><br>
+            Створіть 2 довільних змінних типу Null і Undefined відповідно. Виведіть їх тип в консоль.<br><br>
+          </p>
+        </li>
+        <li class="list">
+          <ul>
+            <li>
+              <div class="row-left">
+                <label for="task-seven"></label>
+                <input disabled type="text" id="task-seven" placeholder="7. За допомогою функції prompt() напишіть скріпт, який послідовно запитує в користувача логін, емейл та пароль, і виводить на екран повідомлення із введеними даними.">
+                <button onclick="getUserInfo()">Check</button>
+              </div>
+            </li>
+          </ul>
+          <div class="row">
+            <label for="task-seven-"></label>
+            <input disabled type="text" id="task-seven-" placeholder=" Наприклад “Dear User, your email is usermale@gmail.com, your password is qwerty”.">
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <label for="task-eight"></label>
+            <input disabled type="text" id="task-eight" placeholder="8. Напишіть скріпт, який вираховує кількість секунд в годині, в добі, в місяці, записує результати в відповідні змінні, і виводить їх значення на екран.">
+            <button onclick="getNumberOfSeconds()">Check</button>
+          </div>
+        </li>
+      </ul>
+  </div>
+</div>
+<script>
+  // alert('Ivan'); //for first task
+</script>
+<script src="script.js"></script>
+</body>
+</html>
