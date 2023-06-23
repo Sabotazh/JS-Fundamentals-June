@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Operators. Type conversions. Arrays. Conditional statement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <ol start="7">
+    <li>
+      Вася працює програмістом і отримує 50$ за кожні 100 рядків коду (99 рядків - 0$, 199 рядків - 50$). <br>
+      За кожне третє запізнення Васю штрафують на 20$. Реалізувати меню :<br>
+      Користувач вводить бажаний дохід Васі і кількість запізнень, порахувати, скільки рядків коду йому треба написати.<br>
+      Користувач вводить кількість рядків коду, написаного Васею, і бажаний обсяг коштів. Порахувати, скільки разів Вася може запізнитися.<br>
+      Користувач вводить кількість рядків коду і кількість запізнень, визначити, скільки грошей заплатять Васі і чи заплатять взагалі.
+    </li>
+  </ol>
+
+  <div class="form">
+    <div class="form-content">
+      <header id="result"></header>
+      <form>
+        <div class="field input-field">
+          <label for="income"></label>
+          <input class="input" id="income" type="number" placeholder="Бажаний дохід">
+        </div>
+
+        <div class="field input-field">
+          <label for="delays"></label>
+          <input class="input" id="delays" type="number" placeholder="Кількість запізнень">
+        </div>
+
+        <div class="field input-field">
+          <label for="lines"></label>
+          <input class="input" id="lines" type="number" placeholder="Кількість рядків коду">
+        </div>
+
+        <div class="field button-field">
+          <button onclick="calculateLinesOfCode()">Порахувати</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
