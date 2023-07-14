@@ -1,0 +1,86 @@
+.box{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.items{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+}
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: 5px solid blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align:center;
+  transition-duration: .7s;
+}
+
+.circle:hover{
+  border: 0 solid blue;
+  box-shadow: 5px 5px 5px 0px blue, inset 4px 4px 15px 0px blue, 0px 0px 23px 18px rgba(0,0,0,0);
+}
+.rotate:hover{
+  animation: spin ease-out 3s;
+}
+.zoom-in:hover{
+  animation: zoom-in ease-out 3s;
+}
+.translate-down:hover{
+  animation: translate-down ease-out 3s;
+}
+.translate-left-down:hover{
+  animation: translate-left-down ease-out 3s;
+}
+.translate-right-down:hover{
+  animation: translate-right-down ease-out 3s;
+}
+@-webkit-keyframes translate-right-down {
+  from {
+    -webkit-transform: translate(0px, 0%);
+  }
+  to {
+    -webkit-transform: translate(120px, 100%);
+  }
+}
+@-webkit-keyframes translate-left-down {
+  from {
+    -webkit-transform: translate(0px, 0%);
+  }
+  to {
+    -webkit-transform: translate(-120px, 100%);
+  }
+}
+@-webkit-keyframes translate-down {
+  from {
+    -webkit-transform: translate(0px, 0%);
+  }
+  to {
+    -webkit-transform: translate(0px, 100%);
+  }
+}
+@-webkit-keyframes zoom-in {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(2);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
