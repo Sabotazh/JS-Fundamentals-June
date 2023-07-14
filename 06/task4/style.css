@@ -1,0 +1,21 @@
+.array{
+  width: 550px;
+  margin: 0 auto;
+}
+input{
+  display: block;
+  margin-top: 10px;
+  width: 250px;
+}
+.out{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  font-size: 25px;
+  word-wrap: break-word;
+  color: white;
+  background-color: green;
+}
