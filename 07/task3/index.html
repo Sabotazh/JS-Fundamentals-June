@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browser Object Model (BOM). Events</title>
+</head>
+<body>
+<ol start="1">
+  <li>
+    Задано сторінку з 3 кнопками і 1 лінкою.
+    Напишіть Javascript код і реалізуйте HTML-сторінку з відповідними подіями на кожному елементові:
+    <ol>
+      <li>1-ша кнопка – при кліку на неї колір фону сторінки міняється на синій</li>
+      <li>2-га кнопка – при подвійному кліку на неї колір фону сторінки міняється на рожевий</li>
+      <li>3-я кнопка – при натисненні і утримуванні кнопки колір фону сторінки стає коричневий. При відпусканні – білий</li>
+      <li>При наведенні на лінку – колір фону стає жовтим, при відведенні – білим</li>
+    </ol>
+    <br>
+    Приклад – курсор наведений на лінку.<br><br>
+    <a href="https://user-images.githubusercontent.com/9075641/228461056-455d4dbf-527b-43de-a3dd-7c079dfbffed.png"
+       target="_blank">
+      https://user-images.githubusercontent.com/9075641/228461056-455d4dbf-527b-43de-a3dd-7c079dfbffed.png
+    </a>
+  </li>
+</ol>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="setBackground('blue')">Click to make the page blue.</button>
+      <button ondblclick="setBackground('pink')">Double-click to make the page pink.</button>
+      <button onmousedown="setBackground('brown')"
+              onmouseup="setBackground('white')">Click and hold to make the page brown.</button>
+      <a href="#" onmouseover="setBackground('yellow')"
+                  onmouseout="setBackground('white')">Hover over to make page yellow.</a>
+<script src="script.js"></script>
+</body>
+</html>
